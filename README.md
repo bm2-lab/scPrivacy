@@ -2,7 +2,7 @@
 ## Introduction
 scFML presents a federated deep metric learning-based framework for institutions to build an effective and robust automated cell annotation system while keeping data locally. In particular, scFML aggregates encrypted model parameters for all institutions instead of putting raw data of all institutions together to train a model, which solves the problem of data regulation laws. We demonstrate the effectiveness of scFML using single-cell datasets from human pancreas, immune and mouse brain datasets.
 ## Workflow
-![](https://github.com/bm2-lab/scFML/blob/master/scFML_workflow.jpg)
+![](https://github.com/bm2-lab/scFML/blob/main/scFML_workflow.jpg)
 scFML comprises two main steps: model learning and cell assignment.
 * (1) In the model learning process, scFML trains a federated deep metric learning model on multiple reference datasets of institutions in a data privacy protection manner. The institutions train the models on the basis of the data of local datasets. The trained model parameters are then encrypted and transmitted to the server. The server updates the federated model via aggregating model parameters. Finally, the institutions download the updated federated model. The process will repeat many times.
 * (2) In the cell assignment process of scFML, the federated model is utilized to transform the query cells. Then, the transformed query cells are compared against cell type landmarks of transformed institutions datasets, and the predicted cell type with the highest similarity among all cell type landmarks is obtained.
