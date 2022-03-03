@@ -62,7 +62,7 @@ def process_data_to_same_gene(gene, root_dir, output_dir, mode):
 
 def test(model, test_data, metrics_list, labels_list):
     test_data = torch.tensor(test_data.values,
-                        dtype=torch.float32).to(device)
+                        dtype=torch.float32)
     max_likelihood_lists = []
     max_likelihood_classes = []
     for l in range(len(metrics_list)):
