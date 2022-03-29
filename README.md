@@ -68,4 +68,4 @@ pbmc1_SM2_Cell_133&nbsp;&nbsp;&nbsp;&nbsp;CD4+_T_cell<br />
 pbmc1_SM2_Cell_142&nbsp;&nbsp;&nbsp;&nbsp;B_Cell
 
 ## Contacts  
-csq_@tongji.edu.cn, bioinfo_db@163.com or qiliu@tongji.edu.cn
+bm2-lab@tongji.edu.cn@tongji.edu.cn
