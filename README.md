@@ -55,15 +55,15 @@ The script can be run by calling the following command. The `filename` is file n
   ```
   python run.py
   ```
-* **Cell assginment with model trained by your datasets:** You just need to put reference datasets files in the `train_set` folder, put the query datasets files in the `test_set` folder and run the following command.
+* **Cell type identification with model trained by your datasets:** You just need to put reference datasets files in the `train_set` folder, put the query datasets files in the `test_set` folder and run the following command.
   ```
   python run.py
   ```
-* **Cell assginment with trained models:** You can also use your own model. You just need to put the query dataset file in the `test_set` folder and run the following command.
+* **Cell type identification with trained models:** You can also use your own model. You just need to put the query dataset file in the `test_set` folder and run the following command.
   ```
   python test_with_trained_model.py -m new_model
   ```
-* **Check the results:** For all the above tests, the assignment results can be found in the `result.txt`  after running. The content of the `result.txt` consists of two columns. The first column represents cell barcodes and the second column represents predicted cell class information. It looks like:<br />
+* **Check the results:** For all the above tests, the type identification results can be found in the `result.txt`  after running. The content of the `result.txt` consists of two columns. The first column represents cell barcodes and the second column represents predicted cell class information. It looks like:<br />
 pbmc1_SM2_Cell_133&nbsp;&nbsp;&nbsp;&nbsp;CD4+_T_cell<br />
 pbmc1_SM2_Cell_142&nbsp;&nbsp;&nbsp;&nbsp;B_Cell
 
