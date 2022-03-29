@@ -1,32 +1,32 @@
-# scFML: Integrating multiple multiple institutions datasets for single cell assignment
+# scPrivacy: Privacy-preserving integration of multiple institutional data for single-cell assignment
 ## Introduction
-scFML presents a federated deep metric learning-based framework for institutions to build an effective and robust automated cell annotation system while keeping data locally. In particular, scFML aggregates encrypted model parameters for all institutions instead of putting raw data of all institutions together to train a model, which solves the problem of data regulation laws. We demonstrate the effectiveness of scFML using single-cell datasets from human pancreas, immune and mouse brain datasets.
+scPrivacy presents a generalized automatically single-cell assignment prototype to facilitate single cell annotations in a data privacy-perserving collaboration manner, by integrating multiple references data distributed in different institutions using an federated learning based deep metric learning framework. The basic idea of scPrivacy is to make each institution train their models locally and aggregate encrypted models parameters for all institutions by avoiding putting raw data of all institutions together directly. We evaluated scPrivacy on 27 publicly available benchmark datasets for single cell assignment to stimulate the scenario that the reference datasets are rapidly generated and accumulated from multiple institutions, while they are prohibited to be integrated directly or exposed to each other due to the data privacy regulations, and demonstrated its effectiveness. 
 ## Workflow
-![](https://github.com/bm2-lab/scFML/blob/main/scFML_workflow.jpg)
-scFML comprises two main steps: model learning and cell assignment.
-* (1) In the model learning process, scFML trains a federated deep metric learning model on multiple reference datasets of institutions in a data privacy protection manner. The institutions train the models on the basis of the data of local datasets. The trained model parameters are then encrypted and transmitted to the server. The server updates the federated model via aggregating model parameters. Finally, the institutions download the updated federated model. The process will repeat many times.
-* (2) In the cell assignment process of scFML, the federated model is utilized to transform the query cells. Then, the transformed query cells are compared against cell type landmarks of transformed institutions datasets, and the predicted cell type with the highest similarity among all cell type landmarks is obtained.
+![](https://github.com/bm2-lab/scPrivacy/blob/master/scPrivacy_workflow.jpg)
+scPrivacy comprises two main steps: model learning and cell assignment.
+* (1) In the model learning process, scPrivacy trains a federated deep metric learning model on multiple institutional datasets in a data privacy-preserving manner. The institutions train the models on the basis of the data of local datasets. The trained model parameters are then encrypted and transmitted to the server. The server updates the federated model via aggregating model parameters. Finally, the institutions download the updated federated model. The process will repeat many times.
+* (2) In the cell assignment process of scPrivacy, the federated model is utilized to transform the query cells. Then, the transformed query cells are compared against cell type landmarks of transformed institutions datasets, and the predicted cell type with the highest similarity among all cell type landmarks is obtained.
 
 ## Install
 Environment: Python>=3.6
 * (1) Clone the repository
 ```
-git clone https://github.com/bm2-lab/scFML.git  
+git clone https://github.com/bm2-lab/scPrivacy.git  
 ```
 * (2) Install the dependencies
 ```
-pip install scFML
+pip install scPrivacy
 ```
 * (3) Create folder 
 
    Linux or Mac:
    ```
-   cd scFML
+   cd scPrivacy
    sh create_folder.sh
    ```
    Windows:
    ```
-   cd scFML
+   cd scPrivacy
    create_folder.bat
    ```
 ## Tutorial
@@ -50,7 +50,7 @@ The script can be run by calling the following command. The `filename` is file n
   ```
   python preprocess.py -f filename
   ```
-### How scFML works
+### How scPrivacy works
 * **Example datasets:** The example data is in https://www.jianguoyun.com/p/DbqGHM0Q7oftCBiFjNQD. You can download whole `train_set` and `test_set` folder. Once downloaded, you need to unzip the `train_set.zip` and `test_set.zip` and then use the unzipped `train_set` folder and `test_set` folder to replace the origin `train_set` folder and `test_set` folder. The demo example can be run by calling the following command.
   ```
   python run.py
