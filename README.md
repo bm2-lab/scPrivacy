@@ -1,6 +1,6 @@
 # scPrivacy: Privacy-preserving integration of multiple institutional data for single-cell type identification
 ## Introduction
-scPrivacy presents a generalized automatically single-cell type identification prototype to facilitate single cell annotations in a data privacy-perserving collaboration manner, by integrating multiple references data distributed in different institutions using an federated learning based deep metric learning framework. The basic idea of scPrivacy is to make each institution train their models locally and aggregate encrypted models parameters for all institutions by avoiding putting raw data of all institutions together directly. We evaluated scPrivacy on 27 publicly available benchmark datasets for single cell type identification to stimulate the scenario that the reference datasets are rapidly generated and accumulated from multiple institutions, while they are prohibited to be integrated directly or exposed to each other due to the data privacy regulations, and demonstrated its effectiveness. 
+scPrivacy presents a generalized automatically single-cell type identification prototype to facilitate single cell annotations in a data privacy-perserving collaboration manner, by integrating multiple references data distributed in different institutions using an federated learning based deep metric learning framework. The basic idea of scPrivacy is to make each institution train their models locally and aggregate encrypted models parameters for all institutions by avoiding putting raw data of all institutions together directly. We evaluated scPrivacy on 27 publicly available benchmark datasets for single cell type identification to stimulate the scenario that the reference datasets are rapidly generated and accumulated from multiple institutions, while they are prohibited to be integrated directly or exposed to each other due to the data privacy regulations, and demonstrated its effectiveness and time efficiency. 
 ## Workflow
 ![](https://github.com/bm2-lab/scPrivacy/blob/main/scPrivacy_workflow.png)
 scPrivacy comprises two main steps: model learning and cell assignment.
@@ -68,4 +68,4 @@ pbmc1_SM2_Cell_133&nbsp;&nbsp;&nbsp;&nbsp;CD4+_T_cell<br />
 pbmc1_SM2_Cell_142&nbsp;&nbsp;&nbsp;&nbsp;B_Cell
 
 ## Contacts  
-bm2-lab@tongji.edu.cn@tongji.edu.cn
+bm2-lab@tongji.edu.cn
