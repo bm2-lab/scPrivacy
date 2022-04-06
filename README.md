@@ -15,7 +15,7 @@ git clone https://github.com/bm2-lab/scPrivacy.git
 ```
 * (2) Install the dependencies
 ```
-pip install scPrivacy
+pip install scprivacy
 ```
 * (3) Create folder 
 
