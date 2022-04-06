@@ -1,4 +1,3 @@
-#This version of mtSC have F1 score of every class. 
 import os
 from torch.utils.data import TensorDataset, DataLoader, Dataset, Sampler
 import torch
