@@ -1,3 +1,3 @@
-import scPrivacy
-scPrivacy.main('train_set','test_set')
+import scprivacy
+scprivacy.main('train_set','test_set')
 print('finish')
